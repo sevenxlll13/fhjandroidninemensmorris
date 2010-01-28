@@ -3,13 +3,17 @@ package at.fhj.itm;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 public class Round extends Activity implements OnClickListener{
 
 	
 	private String name;
 	private int rounds;
+	
+	private TextView round;
 	
 
 	@Override
@@ -23,6 +27,7 @@ public class Round extends Activity implements OnClickListener{
 			name = extras.getString("name");
 			rounds = extras.getInt("rounds");
 		}
+		
 	}
 	
 	
