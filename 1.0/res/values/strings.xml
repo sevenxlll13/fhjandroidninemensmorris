@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Mill</string>
-	<string name="main_title">Mill</string>
-	<string name="continue_label">Continue</string>
+	<string name="app_name">SSP</string>
+	<string name="main_title">SSP</string>
 	<string name="new_game_label">Start New Game</string>
 	<string name="about_label">About</string>
 	<string name="exit_label">Exit</string>
-	<string name="about_text">Mill is an abstract strategy board game for two players that emerged from the Roman Empire. The game is also known as Mill and Mills.</string>
+	<string name="about_text"></string>
 	<string name="settings_label">Settings</string>
 	<string name="settings_title">Mill settings</string>
 	<string name="settings_shortcut">s</string>
 	<string name="music_title">Music</string>
 	<string name="music_summary">Play background music</string>
 	<string name="newgame_title">New Game</string>
-	<string name="player01_label">Player 1:</string>
-	<string name="player02_label">Player 2:</string>
-	<string name="player01_text">Player 1</string>
-	<string name="player02_text">Player 2</string>
+	<string name="name_label">Name:</string>
+	<string name="name_text">- input name -</string>
+	<string name="three_txt">3 rounds</string>
+	<string name="five_txt">5 rounds</string>
 </resources>

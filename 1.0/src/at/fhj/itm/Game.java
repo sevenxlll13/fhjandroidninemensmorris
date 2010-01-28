@@ -1,44 +1,55 @@
 package at.fhj.itm;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class Game extends Activity implements OnClickListener{
 	
-	private String player01, player02;
-	private GameView gameView;
+	private String name;
+	private EditText name_etxt;
+	private RadioButton three_rad, five_rad;
+	private int rounds;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.inputplayer);
+		setContentView(R.layout.input);
 		
 		View startGamebtn = findViewById(R.id.start_button);
+		name_etxt = (EditText)findViewById(R.id.name_input);
+		three_rad = (RadioButton)findViewById(R.id.three_radbtn);
+		five_rad = (RadioButton)findViewById(R.id.five_radbtn);
+		
+		
 		startGamebtn.setOnClickListener(this);
-		
-		
-		
 	}
 
 	@Override
 	public void onClick(View v) {
 		
-		EditText player01name = (EditText)findViewById(R.id.player01_input);
-		EditText player02name = (EditText)findViewById(R.id.player02_input);
-		
-		
 		switch (v.getId()) {
 		case R.id.start_button:
-			player01 = player01name.getText().toString();
-			player02 = player02name.getText().toString();
-			Log.d("Mill", "player01 name:" + player01);
-			Log.d("Mill", "player02 name:" + player02);
-			gameView = new GameView(this);
-			setContentView(gameView);
+			name = name_etxt.getText().toString();
+			
+			if(three_rad.isChecked())
+				rounds = 3;
+			else if(five_rad.isChecked())
+				rounds = 5;
+			
+			Log.d("SSP", "name:" + name);
+			Log.d("SSP", "rounds:" + rounds);
+			
+			Intent iStart = new Intent(this, Round.class);
+			iStart.putExtra("name", name);
+			iStart.putExtra("rounds", rounds);
+			startActivity(iStart);
+		
 			break;
 
 		default:

@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class Muehle extends Activity implements OnClickListener{
+public class SSP extends Activity implements OnClickListener{
     /** Called when the activity is first created. */
 	@Override
 	
@@ -22,13 +22,13 @@ public class Muehle extends Activity implements OnClickListener{
 
         
         // instantiate Buttons
-        View continueBtn = findViewById(R.id.continue_button);
+
         View newGameBtn = findViewById(R.id.new_button);
         View aboutBtn = findViewById(R.id.about_button);
         View exitBtn = findViewById(R.id.exit_button);
         
         // add OnClickListener to Buttons
-        continueBtn.setOnClickListener(this);
+
         newGameBtn.setOnClickListener(this);
         aboutBtn.setOnClickListener(this);
         exitBtn.setOnClickListener(this);
