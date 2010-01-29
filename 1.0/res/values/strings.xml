@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="close_txt">Go back to the menu</string>
+	<string name="score_txt">0:0</string>
+	<string name="app_name">Scissor-Stone-Paper</string>
+	<string name="main_title">Scissor-Stone-Paper for Android</string>
+	<string name="new_game_label">Start New Game</string>
+	<string name="about_label">About</string>
+	<string name="exit_label">Exit</string>
+	<string name="about_text">
+		Scissor-Stone-Paper is a hand game played by two people.\n\nThe game is often used as a
+		selection method in a similar way to coin flipping, drawing straws,
+		or throwing dice are used to randomly select a person for some purpose.
+		\n\nDevelopers:\n-Paul Kapellari\n-Stefan Schmidt
+	</string>
+	<string name="settings_label">Settings</string>
+	<string name="settings_title">Scissor-Stone-Paper settings</string>
+	<string name="settings_shortcut">s</string>
+	<string name="music_title">Music</string>
+	<string name="music_summary">Play background music</string>
+	<string name="newgame_title">New Game</string>
+	<string name="name_label">Name:</string>
+	<string name="name_text">- input name -</string>
+	<string name="round1_txt">Round 1:</string>
+	<string name="round2_txt">Round 2:</string>
+	<string name="round3_txt">Round 3:</string>
+	<string name="vs_txt">vs.</string>
+	<string name="btn_select">Choose</string>
+	<string name="win">, you win!</string>
+	<string name="lose">, you lose!</string>
+
+</resources>

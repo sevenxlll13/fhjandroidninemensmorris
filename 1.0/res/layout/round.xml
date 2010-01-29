@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout 
+	android:id="@+id/TableLayout01" 
+	android:layout_width="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background" android:layout_height="fill_parent">
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+<TextView
+		android:id="@+id/player_title"
+		android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/text" android:gravity="center" android:layout_marginTop="5dip" android:layout_marginBottom="1dip"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dip" android:textColor="@color/score" android:id="@+id/score_lbl" android:gravity="center" android:text="@string/score_txt"></TextView>
+
+
+
+<TextView android:text="@string/round1_txt" android:id="@+id/round1_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0px" android:layout_marginBottom="5px" android:gravity="center" android:textColor="@color/text"></TextView>
+
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center">
+<ImageView android:id="@+id/rnd1_upic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginRight="15px"></ImageView>
+<TextView android:text="@string/vs_txt" android:id="@+id/vs_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@color/text"></TextView>
+<ImageView android:id="@+id/rnd1_cpic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginLeft="15px"></ImageView>
+</TableRow>
+
+<TextView android:text="@string/round2_txt" android:id="@+id/round2_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15px" android:layout_marginBottom="5px" android:gravity="center" android:textColor="@color/text" android:visibility="invisible"></TextView>
+
+<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="fill_horizontal" android:gravity="center" android:visibility="invisible">
+<ImageView android:id="@+id/rnd2_upic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginRight="15px"></ImageView>
+<TextView android:text="@string/vs_txt" android:id="@+id/vs_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@color/text"></TextView>
+<ImageView android:id="@+id/rnd2_cpic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginLeft="15px"></ImageView>
+</TableRow>
+
+<TextView android:text="@string/round3_txt" android:id="@+id/round3_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15px" android:layout_marginBottom="5px" android:gravity="center" android:textColor="@color/text" android:visibility="invisible"></TextView>
+
+<TableRow android:id="@+id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:visibility="invisible">
+<ImageView android:id="@+id/rnd3_upic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginRight="15px"></ImageView>
+<TextView android:text="@string/vs_txt" android:id="@+id/vs_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:textColor="@color/text"></TextView>
+<ImageView android:id="@+id/rnd3_cpic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sst" android:layout_marginLeft="15px"></ImageView>
+
+</TableRow>
+
+<Button android:id="@+id/btn_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8px" android:text="@string/btn_select"></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</TableLayout>
